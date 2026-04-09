@@ -111,7 +111,7 @@ class CarApp:
 if __name__ == "__main__":
     st.set_page_config(page_title="Análisis de Carros - UCV", layout="wide")
     # IMPORTANTE: Cambia esta URL por la URL RAW de tu archivo CSV en GitHub
-    DATA_URL = "https://raw.githubusercontent.com/juandh382/analisis-de-precios-de-carros/main/db/precios_carros_arreglado.csv"
+    DATA_URL = "https://raw.githubusercontent.com/juandh382/analisis-de-precios-de-carros/refs/heads/main/db/precios_carros_arreglado.csv"
     app = CarApp(DATA_URL)
     app.cargar_y_limpiar()
     if app.df_original is not None:
